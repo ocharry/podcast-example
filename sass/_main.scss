@@ -1,0 +1,25 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    color: #060a24;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+  body {
+    font-family: "IBM Plex Mono", monospace;
+  }
+  p{
+    letter-spacing: 0;
+  }
+  @mixin padding-5{
+    padding: 0 5%;
+  }
+ 

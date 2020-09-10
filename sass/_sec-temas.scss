@@ -1,0 +1,34 @@
+.temas {
+    padding-top: 48px;
+    @include padding-5;
+
+
+    h2 {
+        font-family: $font-sans;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-top: 48px;
+        font-weight: 100;
+        margin-bottom: 24px;
+    }
+
+    .contenedor-iconos {
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            margin: 49px 0;
+
+            h3 {
+                margin-top: 13px;
+                font-family: $font-sans;
+                font-size: 24px;
+                color: #060A24;
+                letter-spacing: 0;
+                text-align: center;
+            }
+        }
+    }
+}

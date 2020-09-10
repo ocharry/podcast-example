@@ -1,0 +1,37 @@
+.nosotros {
+    @include padding-5;
+    
+
+
+    .contenedor-nosotros {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            transform: translateY(-55px);
+        }
+
+        .nosotros-text-container {
+            margin: 10px 0 54px;
+
+            h2 {
+                font-family: $font-sans;
+                font-size: 36px;
+                letter-spacing: 0;
+                line-height: 42px;
+                font-weight: 100;
+                margin-bottom: 8px;
+                width: 80%;
+                
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0;
+                line-height: 22px;
+            }
+        }
+    }
+}

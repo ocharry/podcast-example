@@ -1,0 +1,21 @@
+
+.invitados{
+    h2{
+        font-family: $font-sans;
+                font-size: 36px;
+                letter-spacing: 0;
+                line-height: 42px;
+                font-weight: 100;
+                margin-bottom: 8px;
+                @include padding-5;
+
+    }
+    .galeria{
+        margin: 14px 0 0;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+}

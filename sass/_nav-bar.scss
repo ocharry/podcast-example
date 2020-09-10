@@ -1,0 +1,87 @@
+@import 'variables';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+
+    .logo {
+        width: 24px;
+    }
+
+    .btncontrol {
+        display: none;
+    }
+
+    @media (max-width:1024px) {
+        .listas-nav {
+            display: none;
+            box-sizing: border-box;
+            width: 100%;
+
+            li {
+                height: 35px;
+                display: flex;
+                align-items: center;
+
+                a {
+                    font-size: 16px;
+                    color: #ffffff;
+                    line-height: 28px;
+                }
+
+                a:target {
+                    color: rgba(6, 10, 36, 0.56);
+                    text-decoration: line-through;
+                }
+
+
+            }
+        }
+
+        .btncontrol:checked~.listas-nav {
+            position: absolute;
+            top: 44px;
+            left: 0px;
+            display: block;
+            width: 100%;
+            background: #0000EC;
+            z-index: 1;
+            padding-top: 16px;
+
+            li {
+                margin-bottom: 24px;
+                margin-left: 5%;
+
+                a {
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .btncontrol:checked+.btn .fa-bars {
+            display: none;
+        }
+
+        .btncontrol:checked+.btn .fa-times {
+            display: block;
+        }
+    }
+
+    .btn {
+        display: inline;
+
+        .fa-bars {
+            font-size: 18px;
+        }
+
+        .fa-times {
+            font-size: 18px;
+            display: none;
+        }
+    }
+}

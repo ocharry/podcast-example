@@ -1,0 +1,49 @@
+@import 'variables';
+
+header{
+    @include padding-5;
+}
+.txt-header {
+    @include padding-5;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin-top: 29px;
+        margin-bottom: 16px;
+        text-align: left;
+        font-family: $font-sans;
+        font-weight: 300;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+        width: 80%;
+        .world-tachado{
+            text-decoration: line-through;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    @media (max-width:1024px){
+        h1:after{
+            content: ".";
+        
+        }
+    }
+
+}
+
+.boton {
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+    line-height: 22px;
+    margin: 13px 0px 24px;
+    padding: 10px 25px;
+    background: #00f3bb;
+}
